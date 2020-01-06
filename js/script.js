@@ -73,7 +73,7 @@ function playAudio() {
     //145000 milis of music 145 s
     if (!isSong) {
         isSong = true;
-        var backsong = new Audio('../songs/backsong.mp3');
+        var backsong = new Audio('./songs/backsong.mp3');
         backsong.volume = 0.3;
         backsong.play();
         backsong.currentTime = 0;
@@ -184,7 +184,7 @@ function clicou(event) {
     start_temporizador();
     isStarted = true;
     if (event.target.textContent === '*') {
-        new Audio('../songs/kaboom.mp3').play();
+        new Audio('./songs/kaboom.mp3').play();
         isGameOver = true;
         isStarted = false;
         const container = document.querySelector('#container');
