@@ -1,0 +1,227 @@
+h1, h2, h3, h5, button, input {
+    padding: 5px;
+    margin: 2px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#field {
+    height: 400px;
+    width: 400px;
+    border: solid 1px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+/*24 37 77*/
+
+td {
+    text-align: center;
+    vertical-align: center;
+    border: solid 1px;
+    background-color: white;
+    width: 1%;
+    height: 1%;
+}
+
+td:hover {
+    background-color: rgba(0, 255, 255, 0.342);
+}
+
+td.clicked {
+    animation-duration: 0.5s;
+    animation-name: bounceIn;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+        opacity: 0.2;
+    }
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+        opacity: 1;
+    }
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+        opacity: 0.6;
+    }
+    40%, 60% {
+        opacity: 1;
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+body {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.shake {
+    animation-duration: 2s;
+    animation-name: shake;
+}
+
+button, input {
+    border: solid black 1px;
+    border-radius: 20px;
+}
+
+input {
+    text-align: center;
+    width: 50px;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: antiquewhite;
+}
+
+button:active {
+    background-color: white;
+}
+
+#container {
+    text-align: left;
+    width: 550px;
+    padding: 10px;
+    border: solid red 1px;
+    border-radius: 20px;
+    background-color: gainsboro;
+}
+
+#top-container {
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+#field-div {
+    text-align: center;
+}
+
+.campobtn {
+    width: 20%;
+    height: 50px;
+    font-size: xx-large;
+}
+
+#confirmbomb {
+    font-size: large;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.span_local {
+    visibility: hidden;
+}
+
+.h4 {
+    width: 60%;
+    color: aliceblue;
+    font-size: 2em;
+    font-family: 'Press Start 2P', cursive;
+    padding-left: 20%;
+    padding-top: 20%;
+}
+
+.div-lose-true {
+    opacity: 0.8;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    position: fixed;
+    text-align: center;
+}
+
+#game-timer {
+    font-family: 'Press Start 2P', cursive;
+}
+
+#inpnome {
+    width: 200px;
+}
+
+.info-gravar-score {
+    display: flex;
+    height: 50px;
+}
+
+.info-gravar-score input {
+    width: 200px;
+    margin-left: 30%;
+}
+
+.info-gravar-score p {
+    width: 200px;
+    margin-left: 40%;
+}
+
+#btn-rank {
+    font-variant: small-caps;
+    background-color: yellow;
+    font-size: large;
+    width: 200px;
+    margin-left: 105px;
+}
+
+#ch {
+    margin-top: 10px;
+}
+
+.pop-rank-true {
+    border-radius: 20px;
+    margin-left: 20%;
+    margin-top: 30%;
+    opacity: 0.9;
+    background: #000;
+    width: 70%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    position: fixed;
+    color: white;
+}
+
+.pop-rank-false {
+    visibility: hidden;
+}
+
+.pop-rank-true p {
+    font-family: 'Press Start 2P', cursive;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.pop-rank-true button {
+    width: 90%;
+    font-size: xx-large;
+    margin-bottom: 10px;
+}
+
+#tab-rank {
+    color: white;
+    margin-left: 10px;
+    width: 90%;
+}
+#tab-rank td{
+    padding: 4px;
+    background-color: #000;
+}

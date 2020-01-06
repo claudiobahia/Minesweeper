@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <title>Campo Minado</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="top-container">
+            <div class="info-gravar-score">
+                <h1>Minesweeper</h1>
+                <div>
+                    <p>Para salvar seu ranking preencha qualquer nome</p>
+                    <input type="text" placeholder="Nome" id="inp-nome">
+                    <button id="btn-rank">Ver ranking</button>
+                </div>
+            </div>
+            <h3 id="quantbombsh3">Bombas: 5</h3>
+            <h3 id="fieldsizeh3">Tamanho: 5x5</h3>
+            <h2 id="ch">Escolha o tamanho do campo</h2>
+            <button id="5x5btn" class="campobtn">5x5</button>
+            <button id="10x10btn" class="campobtn">10x10</button>
+            <button id="15x15btn" class="campobtn">15x15</button>
+            <h2>Escolha quantas bombas</h2>
+            <div style="display: flex;">
+                <input type="number" id="inputqbombs" min="1" oninput="this.value = Math.abs(this.value)">
+                <button id="confirmbomb">Confirmar</button>
+                <p id="game-timer">Tempo de jogo: 0</p>
+            </div>
+        </div>
+        <div id="field-div">
+            <table align="center" id="field"></table>
+        </div>
+    </div>
+    <div class="div-lose-false" id="div-lose">
+        <h4></h4>
+    </div>
+    <div id="pop-rank-div" class="pop-rank-false">
+        <p></p>
+        <button id="btn-closerank">Fechar</button>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
